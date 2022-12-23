@@ -35,7 +35,9 @@ android {
             versionName = AppConfigs.version_name_release
         }
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         getByName("debug") {
             isTestCoverageEnabled = true
@@ -170,6 +172,9 @@ dependencies {
     implementation(Deps.appcompat)
     implementation(Deps.material)
     implementation(Deps.constraint_layout)
+
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     testImplementation(Deps.junit)
     testImplementation(Deps.mockk)
