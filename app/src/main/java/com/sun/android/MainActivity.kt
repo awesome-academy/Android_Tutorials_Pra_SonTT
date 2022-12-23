@@ -1,43 +1,39 @@
 package com.sun.android
-
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.sun.android.databinding.ActivityMainBinding
+
+const val EXTRA_REPLY = "reply"
+const val EXTRA_REV = "key"
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var txtRev: TextView
-    private lateinit var text_header: TextView
-
+    val binding by lazy{ActivityMainBinding.inflate(layoutInflater)}
     val getAct = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-        Log.d("tag","weewewe")
         if (it.resultCode == Activity.RESULT_OK) {
-            var string = it?.data?.extras?.get("reply")
-            text_header.setVisibility(View.VISIBLE)
-            txtRev.setVisibility(View.VISIBLE)
-            txtRev.setText(string.toString())
+            var dataRevice = it?.data?.extras?.get(EXTRA_REPLY)
+            binding.textViewHeader.visibility = View.VISIBLE
+            binding.textViewReply.visibility = View.VISIBLE
+            binding.textViewReply.text = dataRevice.toString()
         }
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val view = binding.root
+        setContentView(view)
 
-        txtRev =  findViewById(R.id.text_header_reply)
-        text_header = findViewById(R.id.text_header)
     }
-    fun launchSecondActivity(view: View?) {
-        val txtSend = findViewById<EditText>(R.id.edtSend)
+    fun launchSecondActivity(view: View?)  {
+        val txtSend = binding.edtSend.text.toString()
         val intent = Intent(this, SecondActivity::class.java)
-        val message: String = txtSend.getText().toString()
-        intent.putExtra("key", message)
-        txtSend.text = null
-        getAct.launch(intent )
-
+        intent.putExtra(EXTRA_REV, txtSend)
+        binding.textViewReply.visibility = View.INVISIBLE
+        getAct.launch(intent)
     }
 }
+
+
+

@@ -1,1 +1,7 @@
-<resources></resources>
+<resources>
+    <string name="send">Send</string>
+    <string name="reply">Reply</string>
+    <string name="textHint">Text here</string>
+    <string name="msgRevice">Message Revice</string>
+    <string name="msgReply">Message Reply</string>
+</resources>

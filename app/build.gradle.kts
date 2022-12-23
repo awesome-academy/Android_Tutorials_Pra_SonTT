@@ -35,7 +35,9 @@ android {
             versionName = AppConfigs.version_name_release
         }
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         getByName("debug") {
             isTestCoverageEnabled = true
