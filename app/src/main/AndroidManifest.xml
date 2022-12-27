@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Structure_Android">
         <activity
-            android:name=".ScorekeeperActivity"
+            android:name=".fragment.StartFragmentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".fragment.StartFragmentActivity"
+            android:name=".Drawables_style.ScorekeeperActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name=".implicit_intents.SomeActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".SecondActivity"
             android:exported="false"
