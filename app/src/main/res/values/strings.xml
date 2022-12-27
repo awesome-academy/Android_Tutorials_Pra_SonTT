@@ -4,4 +4,7 @@
     <string name="textHint">Text here</string>
     <string name="msgRevice">Message Revice</string>
     <string name="msgReply">Message Reply</string>
+    <string name="openWebsite">Open Website</string>
+    <string name="openLocation">Open Location</string>
+    <string name="shareText">Share this text</string>
 </resources>
