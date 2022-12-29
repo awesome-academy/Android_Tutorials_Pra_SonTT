@@ -2,6 +2,7 @@ plugins {
     id(Plugins.android_application)
     kotlin(Plugins.kotlin_android)
     id(Plugins.detekt).version(Versions.detekt)
+
     jacoco
 }
 
@@ -175,8 +176,8 @@ dependencies {
 
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
-
+    implementation("com.android.support:appcompat-v7:26.0.0")
+    implementation ("com.android.support:design:26.1.0")
     testImplementation(Deps.junit)
     testImplementation(Deps.mockk)
 }

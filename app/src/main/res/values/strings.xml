@@ -72,4 +72,12 @@
     <string name="btn_Alert">Alert</string>
     <string name="btnDate">Date</string>
 
+    <string name="tab2">Tech you can use</string>
+    <string name="tab1">These are the top stories</string>
+    <string name="tab3">Cooking tip</string>
+    <string name="cook">Cook</string>
+    <string name="tech">Tech new</string>
+    <string name="story">Top stories</string>
+
+
 </resources>
