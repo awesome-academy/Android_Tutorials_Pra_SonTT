@@ -18,6 +18,7 @@ class MainOrderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_order)
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         val nightMode: Int = AppCompatDelegate.getDefaultNightMode()
@@ -28,12 +29,14 @@ class MainOrderActivity : AppCompatActivity() {
         }
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.night_mode -> if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        when (item.itemId) {
+            R.id.night_mode -> if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_NO
+            ) else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             R.id.action_order -> {
                 val intent = Intent(this, OrderActivity::class.java)
-                intent.putExtra(EXTRA_REV, "d")
                 startActivity(intent)
             }
             R.id.action_settings -> {
