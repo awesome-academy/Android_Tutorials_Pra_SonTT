@@ -178,6 +178,9 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.android.support:appcompat-v7:26.0.0")
     implementation ("com.android.support:design:26.1.0")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.4.1")
     testImplementation(Deps.junit)
     testImplementation(Deps.mockk)
 }
