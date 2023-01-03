@@ -95,14 +95,20 @@
     <string name="instructions">Enter a book name to find out who wrote the book. </string>
     <string name="button_text">Search Books</string>
     <string name="input_hint">Book Title</string>
-
     <string name="key_query">queryString</string>
     <string name="loading">Loading…</string>
     <string name="no_results">"No Results Found"</string>
     <string name="no_search_term">Please enter a search term</string>
     <string name="no_network">Please check your network connection and try again.</string>
-
-
+    <string name="book_base">https://www.googleapis.com/books/v1/volumes?</string>
+    <string name="query_param">q</string>
+    <string name="max_result">maxResults</string>
+    <string name="print_type">printType</string>
+    <string name="item">items</string>
+    <string name="volume_info">volumeInfo</string>
+    <string name="title">title</string>
+    <string name="authors">authors</string>
+    <string name="query_string">queryString</string>
 
 </resources>
 
