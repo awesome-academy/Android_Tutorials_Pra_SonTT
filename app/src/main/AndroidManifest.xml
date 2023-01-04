@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".internet_connect.InternetActivity"
+            android:name=".Recycler_view.RecyclerActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".PowerReceiver.ReceiverActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +27,7 @@
         </activity>
         <activity
             android:name=".async.asyncTaskActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
@@ -38,7 +41,7 @@
             android:name=".fragment.StartFragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".Recycler_view.RecyclerActivity"
+            android:name=".internet_connect.InternetActivity"
             android:exported="false" />
         <activity
             android:name=".implicit_intents.SomeActivity"
@@ -56,6 +59,10 @@
             android:name=".Drawables_style.ScorekeeperActivity"
             android:exported="false"
             android:label="FirstActivity" />
+        <receiver android:name=".PowerReceiver.CustomReceiver" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
 

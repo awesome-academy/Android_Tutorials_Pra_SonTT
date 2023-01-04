@@ -110,5 +110,10 @@
     <string name="authors">authors</string>
     <string name="query_string">queryString</string>
 
+    <string name="unknown_intent_action">unknown intent action</string>
+    <string name="Power_connected">Power connected!</string>
+    <string name="Power_disconnected">Power disconnected!</string>
+    <string name="Send_Custom_Broadcast">Send Custom Broadcast</string>
+    <string name="Custom_Broadcast_Received"> Custom Broadcast Received</string>
 </resources>
 
