@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<dimen name="sp_112">112sp</dimen>
 	<dimen name="fab_margin">16dp</dimen>
 	<dimen name="standard_margin">8dp</dimen>
 	<dimen name="small_padding">4dp</dimen>
@@ -533,5 +534,4 @@
 	<dimen name="sp_58">58.00sp</dimen>
 	<dimen name="sp_59">59.00sp</dimen>
 	<dimen name="sp_60">60.00sp</dimen>
-    <dimen name="sp_112">112sp</dimen>
 </resources>
