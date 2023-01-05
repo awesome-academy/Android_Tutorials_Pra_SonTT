@@ -14,12 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".contentProvider.ContentProviderActivity"
+            android:name=".notification.NotificationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".contentProvider.ContentProviderActivity"
+            android:exported="false">
         </activity>
         <activity
             android:name=".internet_connect.InternetActivity"
@@ -51,8 +56,7 @@
             android:name=".Drawables_style.ScorekeeperActivity"
             android:exported="false"
             android:label="FirstActivity" />
+
         <receiver android:name=".PowerReceiver.CustomReceiver" />
     </application>
 </manifest>
-
-
